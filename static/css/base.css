@@ -1,0 +1,59 @@
+.pd_default {
+	padding: 24rpx 40rpx;
+}
+.bg-default {
+	background: #294D7C;
+}
+
+.bg-lightorange {
+	background: #FEE7D6;
+}
+
+.bg-lightgreen {
+	background: #80C5CD;
+}
+
+.bg-minor {
+	background: #C0CBD3;
+}
+
+.bg-public{
+	background-color: #f7f9f8;
+}
+
+.text-default {
+	color: #000104 !important;
+}
+
+.text-vice {
+	color: #8F99A7;
+}
+
+.text-minor {
+	color: #C0CBD3;
+}
+.ft-xs{
+	font-size: 18rpx;
+}
+.ft-sm{
+	font-size: 22rpx;
+}
+.ft-dl{
+	font-size: 24rpx;
+}
+.ft-lg{
+	font-size: 28rpx;
+}
+.ft-xl{
+	font-size: 32rpx;
+}
+.ft-xxl{
+	font-size: 36rpx;
+}
+
+.text-bg {
+	background: #F0F0F0;
+}
+/* page{
+	background-color: #FFFFFF;
+} */
