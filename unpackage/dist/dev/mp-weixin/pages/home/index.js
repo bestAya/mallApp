@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var Banner = function Banner() {__webpack_require__.e(/*! require.ensure | pages/home/banner */ "pages/home/banner").then((function () {return resolve(__webpack_require__(/*! ./banner.vue */ 37));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var Banner = function Banner() {__webpack_require__.e(/*! require.ensure | pages/home/banner */ "pages/home/banner").then((function () {return resolve(__webpack_require__(/*! ./banner.vue */ 39));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
