@@ -128,26 +128,43 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var catcard = function catcard() {__webpack_require__.e(/*! require.ensure | pages/components/catcard/index */ "pages/components/catcard/index").then((function () {return resolve(__webpack_require__(/*! ../components/catcard/index.vue */ 50));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
 {
+  components: {
+    catcard: catcard },
+
   data: function data() {
     return {
-      title: 'Hello' };
+      modalName: null,
+      listTouchStart: 0,
+      listTouchDirection: null };
 
   },
-  onLoad: function onLoad() {
-
-  },
-  methods: {} };exports.default = _default;
+  methods: {
+    // ListTouch触摸开始，获取触摸点距盒子左侧的距离
+    ListTouchStart: function ListTouchStart(e) {
+      this.listTouchStart = e.touches[0].pageX;
+    },
+    // ListTouch计算方向，
+    ListTouchMove: function ListTouchMove(e) {
+      this.listTouchDirection = e.touches[0].pageX - this.listTouchStart > 0 ? 'right' : 'left';
+    },
+    // ListTouch计算滚动
+    ListTouchEnd: function ListTouchEnd(e) {
+      if (this.listTouchDirection == 'left') {
+        this.modalName = e.currentTarget.dataset.target;
+      } else {
+        this.modalName = null;
+      }
+      this.listTouchDirection = null;
+    } } };exports.default = _default;
 
 /***/ })
 

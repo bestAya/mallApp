@@ -1,5 +1,5 @@
 
-.card-swiper{
+.card-swiper {
 	height: 304rpx;
 }
 .swiper-item {

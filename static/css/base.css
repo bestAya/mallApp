@@ -1,6 +1,7 @@
 .pd_default {
 	padding: 24rpx 40rpx;
 }
+
 .bg-default {
 	background: #294D7C;
 }
@@ -17,7 +18,7 @@
 	background: #C0CBD3;
 }
 
-.bg-public{
+.bg-public {
 	background-color: #f7f9f8;
 }
 
@@ -32,28 +33,95 @@
 .text-minor {
 	color: #C0CBD3;
 }
-.ft-xs{
+
+.text-tag {
+	color: #4a678f;
+}
+.text-mode{
+	color: #294D7C;
+}
+
+.ft-xs {
 	font-size: 18rpx;
 }
-.ft-sm{
+
+.ft-sm {
 	font-size: 22rpx;
 }
-.ft-dl{
+
+.ft-dl {
 	font-size: 24rpx;
 }
-.ft-lg{
+
+.ft-lg {
 	font-size: 28rpx;
 }
-.ft-xl{
+
+.ft-xl {
 	font-size: 32rpx;
 }
-.ft-xxl{
+
+.ft-xxl {
 	font-size: 36rpx;
+}
+
+.text-decoration {
+	text-decoration: line-through;
+}
+
+.card-tag {
+	height: 36rpx;
+	font-size: 22rpx;
+	line-height: 36rpx;
+}
+
+.bg-tag-blue.light {
+	color: #6da4f4;
+	background-color: #ecf4ff;
+}
+
+.bg-tag-yellow.light {
+	color: #e69e6e;
+	background-color: #fee7d7;
+}
+
+.bg-tag-red.light {
+	color: #ec6f6b;
+	background-color: #feeae9;
+}
+
+.bg-tag-green.light {
+	color: #7eb5ca;
+	background-color: #ecf7f9;
 }
 
 .text-bg {
 	background: #F0F0F0;
 }
+
 /* page{
 	background-color: #FFFFFF;
 } */
+
+
+
+
+	.cu-list-item {
+		width: 104rpx;
+		height: 104rpx;
+		border-radius: 50%;
+		margin-top: 30rpx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cu-list-Image {
+		display: block;
+		width: 70%;
+		height: 70%;
+	}
+
+	.cu-list-item-text {
+		font-size: 44rpx;
+	}

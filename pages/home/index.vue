@@ -15,7 +15,9 @@
 				</view>
 				<view class="cu-list grid" :class="['col-' + gridCol,gridBorder?'':'no-border']">
 					<view class="cu-item text-center flex align-center" v-for="(item,index) in cuIconList" :key="index" v-if="index<gridCol*2">
-						<view class="cu-list-item bg-public"></view>
+						<view class="cu-list-item bg-public">
+							<image class="cu-list-Image" :src="list[index]" mode=""></image>
+						</view>
 
 						<text class="cu-list-item-text text-default text-bold">{{item.name}}</text>
 					</view>
@@ -23,8 +25,8 @@
 			</view>
 		</view>
 
-		<!---->
 		<view class="pd_default bg-white margin-top-sm">
+			<!--专享优惠劵-->
 			<view class="tabb-content">
 				<view class="tabbox flex justify-between align-center">
 					<text class="tips text-default ft-xxl text-bold">专享优惠劵</text>
@@ -50,6 +52,7 @@
 					</scroll-view>
 				</view>
 			</view>
+			<!--限时秒杀-->
 			<view class="tabb-content">
 				<view class="tabbox flex justify-between align-center">
 					<text class="tips text-default ft-xxl text-bold">限时秒杀</text>
@@ -58,6 +61,7 @@
 					</view>
 				</view>
 			</view>
+			<!--好物推荐-->
 			<view class="tabb-content">
 				<view class="tabbox flex justify-between align-center">
 					<text class="tips text-default ft-xxl text-bold">好物推荐</text>
@@ -65,8 +69,45 @@
 						<text class="iconfont icon-right flex align-center justify-center"></text>
 					</view>
 				</view>
+				<scroll-view class="recommend-item flex" scroll-x="true" scroll-left="120">
+					<view style="display: inline-block; width: 33.33%;" v-for="item in 6" :key="item">
+						<view class="recommend-box">
+							<image class="recommend-box-img bg-public" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/faa3e8d9298225c166c3ce926800d91c.png?thumb=1&w=200&h=200&f=webp&q=90"
+							 mode=""></image>
+							<view class="recommend-centen text-center">
+								<view class="card-tag cu-tag light bg-tag-blue ft-xs">好物推荐</view>
+								<view class="text-bold text-default ft-dl padding-tb-xs">短视的小贝吧</view>
+								<view class="">
+									<text class="text-price text-tag ft-xl margin-right-xs text-bold">360</text>
+									<text class="text-price ft-dl text-minor text-decoration">490</text>
+								</view>
+							</view>
+						</view>
+
+					</view>
+				</scroll-view>
 			</view>
 		</view>
+
+		<view class="grid col-2 pd_default bg-white margin-tb-sm  order-box">
+			<view class="order-item padding-right-sm margin-bottom-sm" v-for=" item in 6" :key="item">
+					<image class=" radius bg-public" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6cc07289d1a7d050d24e3fedf1f73086.png?thumb=1&w=200&h=200&f=webp&q=90"
+			 mode="">
+				</image>
+				<view class="order-item-centet padding-tb-sm">
+					<view class="text-default ft-xl text-bold">刷卡机肯德</view>
+					<view class="text-minor ft-dl padding-tb-xs">这是什么疯了</view>
+					<view class="card-tag cu-tag light bg-tag-red ft-xs">好物推荐</view>
+				</view>
+				<view class="">
+					<text class="text-price text-tag ft-xxl margin-right-xs text-bold">360</text>
+					<text class="text-price ft-dl text-minor text-decoration">490</text>
+				</view>
+			</view>
+		</view>
+
+
+
 	</view>
 
 </template>
@@ -80,6 +121,19 @@
 		data() {
 			return {
 				title: 'Hello',
+				list: [
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6cc07289d1a7d050d24e3fedf1f73086.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b76c32a6b8beb73d00e22d7199bcba8.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/563ced6ca5112591d4c19f7133e8847b.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4341891528452ee712596b4ed7347532.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f3106695ccf44ebc7bf4683b0d925dfc.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/6f40f1fa8fc41913dcd40c5d7a4d2604.png?thumb=1&w=200&h=200',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f607feb5f31aa04949d530799d010d99.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7d6458c24d0c24db9385ef7355dfd43.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7dc06a754beb7fe2a2a8aeb93108e74f.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/faa3e8d9298225c166c3ce926800d91c.png?thumb=1&w=200&h=200&f=webp&q=90',
+					'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6cc07289d1a7d050d24e3fedf1f73086.png?thumb=1&w=200&h=200&f=webp&q=90'
+				],
 				cuIconList: [{
 						cuIcon: 'cardboardfill',
 						color: 'red',
@@ -169,16 +223,7 @@
 		margin-top: 36rpx;
 	}
 
-	.cu-list-item {
-		width: 104rpx;
-		height: 104rpx;
-		border-radius: 50%;
-		margin-top: 30rpx;
-	}
 
-	.cu-list-item-text {
-		font-size: 44rpx;
-	}
 
 	.tag-text {
 		font-size: 22rpx;
@@ -209,7 +254,8 @@
 		height: 32rpx;
 	}
 
-	.scroll-view_H {
+	.scroll-view_H,
+	.recommend-item {
 		white-space: nowrap;
 		width: 100%;
 	}
@@ -233,5 +279,40 @@
 		height: 100%;
 		padding: 32rpx 20rpx;
 		vertical-align: baseline
+	}
+
+	.recommend-item,
+	.recommend-box {
+		height: 360rpx;
+	}
+
+	.recommend-box {
+		/* width: 33.33%; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 28rpx 0;
+		justify-content: space-between;
+
+	}
+
+	.recommend-box-img {
+		display: block;
+		width: 160rpx;
+		height: 160rpx;
+	}
+
+	.order-item {
+		width: 50%;
+		height: 560rpx;
+	}
+	.order-item:nth-child(2n){
+		padding-right:0;
+	}
+
+	.order-item image {
+		display: block;
+		width: 340rpx;
+		height: 340rpx;
 	}
 </style>

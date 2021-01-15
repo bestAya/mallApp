@@ -129,7 +129,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
 var _default =
 {
   data: function data() {
@@ -137,31 +136,15 @@ var _default =
       swiperList: [{
         id: 0,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg' },
+        url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c57abbc9b9e06aa5ca23715b569d4c6c.jpg?w=2452&h=920' },
       {
         id: 1,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big37006.jpg' },
+        url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/91e8be56a21db1b399fd25bfffe85bcc.jpeg?thumb=1&w=1226&h=460&f=webp&q=90' },
       {
         id: 2,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg' },
-      {
-        id: 3,
-        type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg' },
-      {
-        id: 4,
-        type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg' },
-      {
-        id: 5,
-        type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg' },
-      {
-        id: 6,
-        type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg' }],
+        url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1acdc8c5e49afede6d6b75ed32568b22.jpg?thumb=1&w=1226&h=460&f=webp&q=90' }],
 
       cardCur: 0 };
 

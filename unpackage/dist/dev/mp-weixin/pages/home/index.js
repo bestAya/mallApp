@@ -210,6 +210,47 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   components: {
     Banner: Banner },
@@ -217,6 +258,19 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   data: function data() {
     return {
       title: 'Hello',
+      list: [
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6cc07289d1a7d050d24e3fedf1f73086.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b76c32a6b8beb73d00e22d7199bcba8.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/563ced6ca5112591d4c19f7133e8847b.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4341891528452ee712596b4ed7347532.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f3106695ccf44ebc7bf4683b0d925dfc.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/6f40f1fa8fc41913dcd40c5d7a4d2604.png?thumb=1&w=200&h=200',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f607feb5f31aa04949d530799d010d99.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7d6458c24d0c24db9385ef7355dfd43.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7dc06a754beb7fe2a2a8aeb93108e74f.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/faa3e8d9298225c166c3ce926800d91c.png?thumb=1&w=200&h=200&f=webp&q=90',
+      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6cc07289d1a7d050d24e3fedf1f73086.png?thumb=1&w=200&h=200&f=webp&q=90'],
+
       cuIconList: [{
         cuIcon: 'cardboardfill',
         color: 'red',
