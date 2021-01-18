@@ -1,1 +1,1 @@
-<view class="content"><catcard vue-id="4b8f6256-1" bind:__l="__l"></catcard></view>
+<view class="content"><view class="cat-box"><block wx:for="{{4}}" wx:for-item="item" wx:for-index="__i0__" wx:key="*this"><view class="padding-lr-sm bg-white flex  align-center"><view class="padding-lr-sm"><checkbox class="checkbox round  bg-default" checked="true"></checkbox></view><catcard class="catcard" vue-id="{{'4b8f6256-1-'+__i0__}}" bind:__l="__l"></catcard></view></block></view></view>

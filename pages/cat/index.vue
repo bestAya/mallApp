@@ -1,6 +1,14 @@
 <template>
 	<view class="content">
-		<catcard></catcard>
+		<view class="cat-box">
+			<view class="padding-lr-sm bg-white flex  align-center" v-for="item in 4" :key="item">
+				<view class="padding-lr-sm">
+					<checkbox class="checkbox round  bg-default" checked="true" />
+				</view>
+				<catcard class="catcard"></catcard>
+			</view>
+		</view>
+
 	</view>
 </template>
 
@@ -12,7 +20,7 @@
 		},
 		data() {
 			return {
-				modalName: null,
+				checked: 1,
 				listTouchStart: 0,
 				listTouchDirection: null,
 			};
@@ -40,5 +48,17 @@
 </script>
 
 <style>
+	.catcard {
+		flex: 1;
+	}
 
+	.cat-box .checkbox .wx-checkbox-input {
+		margin: 0;
+		width: 20px !important;
+		height: 20px !important;
+	}
+
+	.cat-box checkbox::before {
+		right: 3px;
+	}
 </style>

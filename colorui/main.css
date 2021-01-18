@@ -447,6 +447,17 @@ radio.white.checked .uni-radio-input {
 	color: #333333 !important;
 }
 
+switch.bg-default[checked] .wx-switch-input,
+checkbox.bg-default[checked] .wx-checkbox-input,
+radio.bg-default[checked] .wx-radio-input,
+switch.bg-default.checked .uni-switch-input,
+checkbox.bg-default.checked .uni-checkbox-input,
+radio.bg-default.checked .uni-radio-input {
+	background-color: #294D7C !important;
+	border-color: #294D7C !important;
+	color: #FFFFFF !important;
+}
+
 /* ==================
           边框
  ==================== */

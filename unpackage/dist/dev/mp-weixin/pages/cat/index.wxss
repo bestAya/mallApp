@@ -1,0 +1,15 @@
+
+.catcard {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.cat-box .checkbox .wx-checkbox-input {
+	margin: 0;
+	width: 20px !important;
+	height: 20px !important;
+}
+.cat-box checkbox::before {
+	right: 3px;
+}
+

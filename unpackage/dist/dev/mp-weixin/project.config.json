@@ -25,18 +25,6 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/tag/index",
-          "pathName": "pages/tag/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/cat/index",
-          "pathName": "pages/home/index",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/cat/index",
           "pathName": "pages/cat/index",
           "scene": null
